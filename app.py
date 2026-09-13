@@ -56,7 +56,7 @@ def load_model():
     return SentenceTransformer("all-MiniLM-L6-v2")
 
 model = load_model()
-client = Groq(api_key=os.getenv("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"))  # Ensure you have your Groq API key in the .env file
+client = Groq(api_key=os.getenv("Grok API Key here"))  
 uploaded_file = st.file_uploader("Upload a PDF", type="pdf")
 
 if uploaded_file is not None:
